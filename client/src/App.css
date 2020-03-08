@@ -1,0 +1,36 @@
+.app{
+  height: 100vh;
+  background: lightblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.badge{
+  height: 30px;
+}
+
+.btn{
+  margin-top: 75px;
+  width: 300px;
+  height: 80px;
+  background-color: #4d8581;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-lg{
+  background-color: #2e5c5a;
+}
