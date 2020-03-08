@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import axios from "axios"; 
+import React, { Component } from 'react';
+import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import "./Form.css"
 class Form extends Component {
-    
+
     constructor(props) {
         super(props)
 
@@ -78,58 +78,61 @@ class Form extends Component {
             url: '/persons',
             data: person
         })
-        .then(res => {
-            console.log(res.data);
-        })
+            .then(res => {
+                console.log(res.data);
+            })
     }
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}> 
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <div>
-                            <label>First Name</label>
-                            <input type="text" value={this.state.firstName} placeholder="First Name"
-                                            onChange={this.handleFirstNameChange}/>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <div>
-                            <label>Last Name</label>
-                            <input type="text" value={this.state.lastName} placeholder="Last Name"
-                                            onChange={this.handleLastNameChange}/>
-                        </div>
-                    </div>
+            <form onSubmit={this.handleSubmit}>
+                
+
+                <div className='form-input'>
+                    <label className="label-style">First Name</label>
+                    <input type="text" value={this.state.firstName} placeholder="First Name"
+                        onChange={this.handleFirstNameChange} />
+
                 </div>
-                <div>
-                    <label>Location</label>
+
+                <div className='form-input'>
+                    <label className="label-style">Last Name</label>
+                    <input type="text" value={this.state.lastName} placeholder="Last Name"
+                        onChange={this.handleLastNameChange} />
+                </div>
+
+
+                <div className='form-input'>
+                    <label className="label-style">Location</label>
                     <input type="text" value={this.state.location} placeholder="Location"
-                                    onChange={this.handleLocationChange}/>
+                        onChange={this.handleLocationChange} />
                 </div>
-                <div>
-                    <label>Event Name</label>
+                <div className='form-input'>
+                    <label className="label-style">Event Name</label>
                     <input type="text" value={this.state.eventName} placeholder="Event Name"
-                                    onChange={this.handleEventNameChange}/>
+                        onChange={this.handleEventNameChange} />
                 </div>
-                <div>
-                    <label>Date</label>
-                    <DatePicker
+                <div className='form-input'>
+                    <label className="label-style">Date</label>
+                    <DatePicker id="date-picker"
                         selected={this.state.date}
                         onChange={this.handleDateChange}
                     />
                 </div>
-                <div>
-                    <label>Profile URL</label>
+                <div className='form-input'>
+                    <label className='label-style'>Profile URL</label>
                     <textarea value={this.state.profileUrl} placeholder="Profile URL"
-                                    onChange={this.handleProfileURLChange}/>
+                        onChange={this.handleProfileURLChange} />
                 </div>
-                <div>
-                    <label>Notes</label>
+                <div className='form-input'>
+                    <label className='label-style'>Notes</label>
                     <textarea value={this.state.notes} placeholder="Notes"
-                                    onChange={this.handleNotesChange}/>
+                        onChange={this.handleNotesChange} />
                 </div>
-                <button type="submit">Add</button>
+                <div id="button-div">
+                    <button type="submit" id='save-button'>Save</button>
+                </div>
+                
             </form>
         )
     }

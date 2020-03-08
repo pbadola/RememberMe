@@ -35,14 +35,14 @@ class App extends Component {
       <div>
         <BrowserRouter>
           {/* <PersonList dataFromParent = {this.state.persons}/> */}
-          <div class="buttons">
+          <div className="buttons">
             <Link to="/addConnection">
-              <button type="button" class="btn btn-lg">
+              <button type="button" style={{backgroundColor: "#512617"}}  class="btn btn-lg">
                 <div style={{color: "#FFFFFF"}}>Add a new connection</div>
               </button>
             </Link>
             <Link to="/findConnection">
-              <button type="button" class="btn btn-lg">
+              <button type="button" style={{backgroundColor: "#512617"}} class="btn btn-lg">
                 <div style={{color: "#FFFFFF"}}>Find a connection</div>
               </button>
             </Link>

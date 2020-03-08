@@ -6,7 +6,7 @@ export default class FindConnection extends React.Component {
     render() {
         return (
             <div>
-                <h1>Find Connection</h1>
+                <h1 className="heading">Find Connection</h1>
                 <PersonList />
             </div>
         );

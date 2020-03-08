@@ -3,7 +3,7 @@ import axios from "axios";
 import DummyImg from './dummyImg.jpg';
 import Moment from 'react-moment';
 import 'moment-timezone';
-
+import './Form.css'
 export default class PersonList extends React.Component {
     constructor(props) {
         super(props);
