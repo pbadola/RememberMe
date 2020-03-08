@@ -6,7 +6,7 @@ export default class AddConnection extends React.Component {
     render() {
         return (
             <div>
-                <h1>Add Connection</h1>
+                <h1 className="heading">Add Connection</h1>
                 <Form />
             </div>
         );

@@ -1,0 +1,54 @@
+.label-style{
+  display: block;
+  font-size: 1.2em;
+  color: #512617;
+}
+
+.form-input{
+  margin-bottom: 20px;
+  margin-left: 15%;
+}
+
+#date-picker, .form-input > input, textarea{
+  background-color: #eaedda;
+  font-size: 1.1em;
+  border-radius: 6px;
+  padding: 3px;
+  width: 80%;
+
+}
+
+#save-button{
+  background-color: #512617;
+  border-color: #512617;
+  color: white;
+  font-size: 1.2em;
+  padding: 5px;
+  border-radius: 5px;
+  float: right;
+  margin-right: 20px;
+}
+
+#button-div{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  
+}
+
+.card{
+  margin-bottom: 20px;
+  margin-left: 45px;
+  color: #512617;
+}
+.list-group-item,.card-body{
+  padding: 6px;
+  padding-left: 10px;
+}
+
+.heading{
+  color:  #512617;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
