@@ -17,10 +17,6 @@ const PersonSchema = mongoose.Schema({
         type: String,
         required: false
     },
-    hairColor: {
-        type: String,
-        required: false
-    },
     date: {
         type: Date,
         default: Date.now

@@ -29,7 +29,6 @@ router.post('/', async (req, res) => {
         lastName: req.body.lastName,
         location: req.body.location,
         eventName: req.body.eventName,
-        hairColor: req.body.hairColor,
         date: req.body.date,
         profileUrl: req.body.profileUrl,
         notes: req.body.notes
@@ -63,7 +62,6 @@ router.patch('/:personId', async (req, res) => {
                 lastName: (req.body.lastName === null) ?  lastName : req.body.lastName,
                 location: (req.body.location === null) ? location : req.body.location,
                 eventName: (req.body.eventName === null) ? eventName : req.body.eventName,
-                hairColor: (req.body.hairColor === null) ? hairColor : req.body.hairColor,
                 date: (req.body.date === null) ? date : req.body.date,
                 profileUrl: (req.body.profileUrl === null) ? profileUrl : req.body.profileUrl,
                 notes: (req.body.notes === null) ? notes : req.body.notes}
