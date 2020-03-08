@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
 const PersonSchema = mongoose.Schema({
+    // _id: {
+    //     type: mongoose.Schema.Types.ObjectId
+    // },
     firstName: {
         type: String,
         required: false
